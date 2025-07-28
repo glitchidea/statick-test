@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenSourceLab - Ophianox Açık Kaynak Projeleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-github-alt"></i>
+                <span>OpenSourceLab</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="projeler.html" class="nav-link">Projeler</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="hizmetler.html" class="nav-link">Hizmetler</a></li>
+                <li><a href="topluluk.html" class="nav-link">Topluluk</a></li>
+                <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-building"></i>
+                    <span>Ophianox - Open Source Company</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="typing-text">Ophianox ile</span>
+                    <span class="gradient-text">Açık Kaynak Çözümler</span>
+                </h1>
+                <p class="hero-description">
+                    Ophianox şirketi olarak geliştirdiğim açık kaynak projeleri ile teknoloji dünyasına katkı sağlıyorum. 
+                    Projelerim açık kaynak olarak herkese ücretsiz, kurumsal kullanım için ise lisanslı olarak 
+                    profesyonel destek ve ek özelliklerle sunuluyor.
+                </p>
+                <div class="hero-buttons">
+                    <a href="projeler.html" class="btn-primary">
+                        <i class="fab fa-github"></i>
+                        Projelerimi Keşfet
+                    </a>
+                    <a href="blog.html" class="btn-secondary">
+                        <i class="fas fa-blog"></i>
+                        Blog Yazılarım
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control close"></span>
+                            <span class="control minimize"></span>
+                            <span class="control maximize"></span>
+                        </div>
+                        <div class="window-title">main.py</div>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line"><span class="comment"># OpenSourceLab Projects</span></div>
+                        <div class="code-line"><span class="keyword">class</span> <span class="class-name">OpenSourceDeveloper</span>:</div>
+                        <div class="code-line">    <span class="keyword">def</span> <span class="function">__init__</span>(self):</div>
+                        <div class="code-line">        self.passion = <span class="string">"Open Source"</span></div>
+                        <div class="code-line">        self.licenses = [<span class="string">"MIT"</span>, <span class="string">"GPL"</span>, <span class="string">"Apache"</span>]</div>
+                        <div class="code-line">        self.community = <span class="string">"First"</span></div>
+                        <div class="code-line"></div>
+                        <div class="code-line">    <span class="keyword">def</span> <span class="function">contribute</span>(self):</div>
+                        <div class="code-line">        <span class="keyword">return</span> <span class="string">"Making code accessible"</span></div>
+                    </div>
+                </div>
+                <div class="floating-badge badge-1">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="floating-badge badge-3">
+                    <i class="fab fa-docker"></i>
+                    <span>Docker</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Öne Çıkan Projeler</h2>
+                <p>En popüler ve aktif olarak geliştirilen açık kaynak projelerim</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-meta">
+                            <div class="license-badge gpl">GPL v3</div>
+                            <div class="github-stats">
+                                <span><i class="fas fa-star"></i> 450</span>
+                                <span><i class="fas fa-code-branch"></i> 89</span>
+                            </div>
+                            <div class="status-badge">Aktif</div>
+                        </div>
+                    </div>
+                    <h3>SentrySystem</h3>
+                    <p>Modern güvenlik izleme ve tehdit analizi sistemi. Gerçek zamanlı log analizi ve otomatik tehdit tespiti ile kurumsal güvenliği artırın.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn-github">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="#" class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                        <a href="#" class="btn-license">
+                            <i class="fas fa-certificate"></i>
+                            Lisans Al
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-meta">
+                            <div class="license-badge apache">Apache 2.0</div>
+                            <div class="github-stats">
+                                <span><i class="fas fa-star"></i> 320</span>
+                                <span><i class="fas fa-code-branch"></i> 67</span>
+                            </div>
+                            <div class="status-badge">Aktif</div>
+                        </div>
+                    </div>
+                    <h3>InfoGrid</h3>
+                    <p>Esnek ve hızlı veri görselleştirme platformu. Büyük veri setlerini interaktif dashboard'lar ile analiz edin.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn-github">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="#" class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                        <a href="#" class="btn-license">
+                            <i class="fas fa-certificate"></i>
+                            Lisans Al
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-meta">
+                            <div class="license-badge">MIT</div>
+                            <div class="github-stats">
+                                <span><i class="fas fa-star"></i> 280</span>
+                                <span><i class="fas fa-code-branch"></i> 45</span>
+                            </div>
+                            <div class="status-badge beta">Beta</div>
+                        </div>
+                    </div>
+                    <h3>AutoPipeline</h3>
+                    <p>CI/CD pipeline otomasyonu için akıllı araç. Kod kalitesi kontrolü ve otomatik deployment ile geliştirme sürecinizi hızlandırın.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">GitLab CI</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn-github">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="#" class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </a>
+                        <a href="#" class="btn-license">
+                            <i class="fas fa-certificate"></i>
+                            Lisans Al
+                        </a>
+                    </div>
+                </div>
+                        </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="projeler.html" class="btn-primary">
+                    <i class="fas fa-arrow-right"></i>
+                    Tüm Projeleri Görüntüle
+                </a>
+                            </div>
+                        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Neden OpenSourceLab?</h2>
+                <p>Açık kaynak geliştirme konusundaki tecrübem ve yaklaşımım</p>
+            </div>
+            
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Topluluk Odaklı</h3>
+                    <p>Her projeyi topluluk geri bildirimleri doğrultusunda geliştiriyor, açık kaynak felsefesini benimsiyorum</p>
+                    </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Güvenilir Kod</h3>
+                    <p>Tüm projelerim kapsamlı testler, kod incelemeleri ve güvenlik kontrolleri ile geliştirilir</p>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Modern Teknolojiler</h3>
+                    <p>En güncel teknolojiler ve best practice'ler kullanarak gelecek odaklı çözümler üretiyorum</p>
+                    </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Sürekli Destek</h3>
+                    <p>Projelerime sürekli katkı sağlıyor, community desteği ve dokümantasyon sağlıyorum</p>
+                </div>
+
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Esnek Lisanslama</h3>
+                    <p>Bireysel kullanım ücretsiz, kurumsal kullanım için profesyonel lisans seçenekleri sunuyorum</p>
+                    </div>
+                
+                <div class="advantage-item">
+                    <div class="advantage-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Sürekli Gelişim</h3>
+                    <p>Aktif geliştirme, düzenli güncellemeler ve yeni özellikler ile projelerimi canlı tutuyorum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Recent Blog Posts -->
+    <section class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Son Blog Yazıları</h2>
+                <p>Açık kaynak geliştirme ve teknoloji üzerine düşüncelerim</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card featured">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=250&fit=crop" alt="Açık Kaynak">
+                        <div class="blog-category tech">Açık Kaynak</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <span class="day">15</span>
+                            <span class="month">Ara</span>
+                        </div>
+                        <h3>Açık Kaynak Projelerinde Güvenlik Best Practices</h3>
+                        <p>Açık kaynak projelerinde güvenliği nasıl ön planda tutabilir, kod kalitesini nasıl artırabiliriz?</p>
+                        <div class="blog-meta">
+                            <span class="blog-author"><i class="fas fa-user"></i> OpenSourceLab</span>
+                            <span class="blog-reading-time"><i class="fas fa-clock"></i> 8 dk okuma</span>
+                    </div>
+                        <div class="blog-tags">
+                            <span class="tag">Güvenlik</span>
+                            <span class="tag">Best Practices</span>
+                            <span class="tag">Kod Kalitesi</span>
+                </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" alt="DevOps">
+                        <div class="blog-category devops">DevOps</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <span class="day">10</span>
+                            <span class="month">Ara</span>
+                        </div>
+                        <h3>CI/CD Pipeline'ları ile Otomatik Deployment</h3>
+                        <p>Modern DevOps pratikleri ile development sürecinizi nasıl hızlandırabilirsiniz?</p>
+                        <div class="blog-meta">
+                            <span class="blog-author"><i class="fas fa-user"></i> OpenSourceLab</span>
+                            <span class="blog-reading-time"><i class="fas fa-clock"></i> 12 dk okuma</span>
+                        </div>
+                        <div class="blog-tags">
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Automation</span>
+                </div>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1517180102446-f3ece451e9d8?w=400&h=250&fit=crop" alt="Community">
+                        <div class="blog-category community">Topluluk</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-date">
+                            <span class="day">05</span>
+                            <span class="month">Ara</span>
+                        </div>
+                        <h3>Açık Kaynak Topluluklarında Nasıl Aktif Olunur?</h3>
+                        <p>Açık kaynak topluluklarına katkıda bulunmanın yolları ve faydaları nelerdir?</p>
+                        <div class="blog-meta">
+                            <span class="blog-author"><i class="fas fa-user"></i> OpenSourceLab</span>
+                            <span class="blog-reading-time"><i class="fas fa-clock"></i> 6 dk okuma</span>
+                </div>
+                        <div class="blog-tags">
+                            <span class="tag">Topluluk</span>
+                            <span class="tag">Katkı</span>
+                    </div>
+                    </div>
+                </article>
+                </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="blog.html" class="btn-secondary">
+                    <i class="fas fa-arrow-right"></i>
+                    Tüm Blog Yazılarını Oku
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Overview -->
+    <section class="community">
+        <div class="container">
+            <div class="section-header">
+                <h2>Topluluk</h2>
+                <p>Büyüyen açık kaynak topluluğumuzun bir parçası ol</p>
+            </div>
+            <div class="community-content">
+                <div class="community-stats">
+                    <div class="stat-card">
+                        <i class="fab fa-github"></i>
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">GitHub Takipçi</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fab fa-discord"></i>
+                        <span class="stat-number">350+</span>
+                        <span class="stat-label">Discord Üyesi</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-code-branch"></i>
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Aylık Katkı</span>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-globe"></i>
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Ülkeden Katılım</span>
+                    </div>
+                </div>
+
+                <div class="community-links">
+                    <h3>Topluluğa Katıl</h3>
+                    <div class="social-platforms">
+                        <a href="#" class="platform-link">
+                            <i class="fab fa-discord"></i>
+                            <h4>Discord</h4>
+                            <p>Anlık sohbet ve destek</p>
+                        </a>
+                        <a href="#" class="platform-link">
+                            <i class="fab fa-github"></i>
+                            <h4>GitHub</h4>
+                            <p>Kod katkıları</p>
+                        </a>
+                        <a href="#" class="platform-link">
+                            <i class="fab fa-telegram"></i>
+                            <h4>Telegram</h4>
+                            <p>Günlük duyurular</p>
+                        </a>
+                        <a href="#" class="platform-link">
+                            <i class="fab fa-youtube"></i>
+                            <h4>YouTube</h4>
+                            <p>Video eğitimler</p>
+                        </a>
+                            </div>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <a href="topluluk.html" class="btn-primary">
+                            <i class="fas fa-users"></i>
+                            Topluluk Sayfasına Git
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topluluk - OpenSourceLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-github-alt"></i>
+                <span>OpenSourceLab</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="projeler.html" class="nav-link">Projeler</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="hizmetler.html" class="nav-link">Hizmetler</a></li>
+                <li><a href="topluluk.html" class="nav-link active">Topluluk</a></li>
+                <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="community-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1><i class="fas fa-users"></i> Açık Kaynak Topluluğuna Katılın</h1>
+                <p>Birlikte öğrenip, gelişen ve paylaşan güçlü bir topluluk oluşturuyoruz. Her seviyeden geliştirici hoş geldin!</p>
+                <div class="hero-actions">
+                    <a href="#join-community" class="btn-primary">
+                        <i class="fab fa-discord"></i>
+                        Discord'a Katıl
+                    </a>
+                    <a href="#contribution" class="btn-secondary">
+                        <i class="fas fa-code-branch"></i>
+                        Katkıda Bulun
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Stats -->
+    <section class="community-overview">
+        <div class="container">
+            <div class="stats-showcase">
+                <div class="stat-card premium">
+                    <div class="stat-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">25+</span>
+                        <span class="stat-label">Aktif Proje</span>
+                        <span class="stat-desc">Sürekli geliştirilen projeler</span>
+                    </div>
+                </div>
+                <div class="stat-card premium">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Topluluk Üyesi</span>
+                        <span class="stat-desc">Aktif katılımcı geliştirici</span>
+                    </div>
+                </div>
+                <div class="stat-card premium">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">Katkı Sayısı</span>
+                        <span class="stat-desc">Bu ay yapılan katkılar</span>
+                    </div>
+                </div>
+                <div class="stat-card premium">
+                    <div class="stat-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="stat-content">
+                        <span class="stat-number">1.2K+</span>
+                        <span class="stat-label">GitHub Stars</span>
+                        <span class="stat-desc">Toplam yıldız sayısı</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Platforms -->
+    <section id="join-community" class="community-platforms">
+        <div class="container">
+            <div class="section-header">
+                <h2>Topluluk Platformları</h2>
+                <p>Farklı platformlarda aktif topluluğumuzla bağlantı kurun</p>
+            </div>
+            
+            <div class="platforms-grid">
+                <div class="platform-card featured">
+                    <div class="platform-header">
+                        <i class="fab fa-discord"></i>
+                        <h3>Discord Sunucusu</h3>
+                        <span class="member-count">350+ üye</span>
+                    </div>
+                    <p>Anlık sohbet, teknik destek, proje tartışmaları ve topluluk etkinlikleri için Discord sunucumuza katılın.</p>
+                    <div class="platform-features">
+                        <span class="feature"><i class="fas fa-comments"></i> Anlık sohbet</span>
+                        <span class="feature"><i class="fas fa-headset"></i> Sesli toplantılar</span>
+                        <span class="feature"><i class="fas fa-calendar"></i> Etkinlik duyuruları</span>
+                        <span class="feature"><i class="fas fa-question-circle"></i> Teknik destek</span>
+                    </div>
+                    <a href="#" class="platform-btn discord">
+                        <i class="fab fa-discord"></i>
+                        Discord'a Katıl
+                    </a>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <i class="fab fa-github"></i>
+                        <h3>GitHub Organization</h3>
+                        <span class="member-count">200+ contributor</span>
+                    </div>
+                    <p>Tüm açık kaynak projelerimiz GitHub organizasyonumuzda. Kod katkısı yapmak istiyorsanız buradan başlayın.</p>
+                    <div class="platform-features">
+                        <span class="feature"><i class="fas fa-code"></i> Kaynak kodlar</span>
+                        <span class="feature"><i class="fas fa-bug"></i> Issue tracking</span>
+                        <span class="feature"><i class="fas fa-code-branch"></i> Pull requests</span>
+                        <span class="feature"><i class="fas fa-book"></i> Dokümantasyon</span>
+                    </div>
+                    <a href="#" class="platform-btn github">
+                        <i class="fab fa-github"></i>
+                        GitHub'a Git
+                    </a>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <i class="fab fa-telegram"></i>
+                        <h3>Telegram Grubu</h3>
+                        <span class="member-count">150+ üye</span>
+                    </div>
+                    <p>Hızlı sorular, günlük sohbetler ve anlık duyurular için Telegram grubumuz.</p>
+                    <div class="platform-features">
+                        <span class="feature"><i class="fas fa-bolt"></i> Hızlı iletişim</span>
+                        <span class="feature"><i class="fas fa-mobile-alt"></i> Mobil uyumlu</span>
+                        <span class="feature"><i class="fas fa-bell"></i> Anlık bildirimler</span>
+                    </div>
+                    <a href="#" class="platform-btn telegram">
+                        <i class="fab fa-telegram"></i>
+                        Telegram'a Katıl
+                    </a>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-header">
+                        <i class="fab fa-youtube"></i>
+                        <h3>YouTube Kanalı</h3>
+                        <span class="member-count">1.5K+ abone</span>
+                    </div>
+                    <p>Video eğitimler, canlı yayınlar ve proje tanıtımları için YouTube kanalımızı takip edin.</p>
+                    <div class="platform-features">
+                        <span class="feature"><i class="fas fa-video"></i> Video eğitimler</span>
+                        <span class="feature"><i class="fas fa-broadcast-tower"></i> Canlı yayınlar</span>
+                        <span class="feature"><i class="fas fa-play-circle"></i> Proje tanıtımları</span>
+                    </div>
+                    <a href="#" class="platform-btn youtube">
+                        <i class="fab fa-youtube"></i>
+                        Abone Ol
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contribution Guide -->
+    <section id="contribution" class="contribution-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nasıl Katkıda Bulunabilirsiniz?</h2>
+                <p>Her seviyeden geliştirici için uygun katkı yolları</p>
+            </div>
+            
+            <div class="contribution-grid">
+                <div class="contribution-path">
+                    <div class="path-header">
+                        <i class="fas fa-baby"></i>
+                        <h3>Yeni Başlayanlar</h3>
+                        <span class="difficulty beginner">Başlangıç</span>
+                    </div>
+                    <div class="path-steps">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Dokümantasyon</h4>
+                                <p>README dosyalarını geliştirin, örnek kodlar ekleyin</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Bug Raporları</h4>
+                                <p>Karşılaştığınız hataları detaylı şekilde bildirin</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Çeviri</h4>
+                                <p>Projelerin farklı dillere çevirisine yardım edin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-action">
+                        <a href="#" class="contribution-btn">
+                            <i class="fas fa-rocket"></i>
+                            Başla
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contribution-path">
+                    <div class="path-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Geliştiriciler</h3>
+                        <span class="difficulty intermediate">Orta</span>
+                    </div>
+                    <div class="path-steps">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Issue Çözme</h4>
+                                <p>Mevcut issue'ları çözerek projelere katkıda bulunun</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Özellik Geliştirme</h4>
+                                <p>Yeni özellikler ekleyin ve mevcut kodları geliştirin</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Test Yazma</h4>
+                                <p>Unit testler yazarak kod kalitesini artırın</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-action">
+                        <a href="#" class="contribution-btn">
+                            <i class="fas fa-code-branch"></i>
+                            Katkıda Bulun
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contribution-path">
+                    <div class="path-header">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Mentorlar</h3>
+                        <span class="difficulty advanced">İleri</span>
+                    </div>
+                    <div class="path-steps">
+                        <div class="step-item">
+                            <span class="step-number">1</span>
+                            <div class="step-content">
+                                <h4>Code Review</h4>
+                                <p>Pull request'leri inceleyin ve geri bildirim verin</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">2</span>
+                            <div class="step-content">
+                                <h4>Mentorluk</h4>
+                                <p>Yeni katılımcılara rehberlik edin</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <span class="step-number">3</span>
+                            <div class="step-content">
+                                <h4>Proje Yönetimi</h4>
+                                <p>Projelerin yol haritasını belirlemeye yardım edin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="path-action">
+                        <a href="#" class="contribution-btn">
+                            <i class="fas fa-graduation-cap"></i>
+                            Mentor Ol
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Learning Resources -->
+    <section class="learning-resources">
+        <div class="container">
+            <div class="section-header">
+                <h2>Öğrenme Kaynakları</h2>
+                <p>Gelişiminizi destekleyecek kaynaklar ve rehberler</p>
+            </div>
+            
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <div class="category-header">
+                        <i class="fas fa-book"></i>
+                        <h3>Dokümantasyon</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-file-alt"></i> Açık Kaynak Başlangıç Rehberi</a></li>
+                        <li><a href="#"><i class="fas fa-code"></i> Git ve GitHub Kullanımı</a></li>
+                        <li><a href="#"><i class="fas fa-tasks"></i> Proje Yönetimi Rehberi</a></li>
+                        <li><a href="#"><i class="fas fa-shield-alt"></i> Güvenlik Best Practices</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-category">
+                    <div class="category-header">
+                        <i class="fas fa-video"></i>
+                        <h3>Video Eğitimler</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-youtube"></i> Açık Kaynak Temelleri</a></li>
+                        <li><a href="#"><i class="fas fa-play-circle"></i> Code Review Teknikleri</a></li>
+                        <li><a href="#"><i class="fas fa-broadcast-tower"></i> Canlı Kodlama Seansları</a></li>
+                        <li><a href="#"><i class="fas fa-microphone"></i> Podcast Arşivi</a></li>
+                    </ul>
+                </div>
+
+                <div class="resource-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Araçlar & Templates</h3>
+                    </div>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-file-code"></i> Proje Template'leri</a></li>
+                        <li><a href="#"><i class="fas fa-clipboard-check"></i> Code Review Checklist</a></li>
+                        <li><a href="#"><i class="fas fa-robot"></i> CI/CD Pipeline Örnekleri</a></li>
+                        <li><a href="#"><i class="fas fa-cog"></i> Development Environment Setup</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html> 
+</html> 

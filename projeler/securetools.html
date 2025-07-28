@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureTools - OpenSourceLab</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-github-alt"></i>
+                <span>OpenSourceLab</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="../projeler.html" class="nav-link active">Projeler</a></li>
+                <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                <li><a href="../hizmetler.html" class="nav-link">Hizmetler</a></li>
+                <li><a href="../topluluk.html" class="nav-link">Topluluk</a></li>
+                <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <div class="project-icon-large">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="project-info">
+                    <h1>SecureTools</h1>
+                    <p class="project-description">Siber güvenlik profesyonelleri için açık kaynak araç seti</p>
+                    <div class="project-meta">
+                        <div class="license-badge">MIT License</div>
+                        <div class="github-stats">
+                            <span><i class="fas fa-star"></i> 98</span>
+                            <span><i class="fas fa-code-branch"></i> 15</span>
+                            <span><i class="fas fa-eye"></i> 456</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="project-main">
+                    <div class="section">
+                        <h2>Proje Hakkında</h2>
+                        <p>SecureTools, siber güvenlik uzmanları ve penetrasyon testçileri için geliştirilmiş kapsamlı bir açık kaynak araç koleksiyonudur. Güvenlik testleri, ağ analizi ve tehdit tespiti için gerekli tüm araçları tek bir platformda birleştirir.</p>
+                        
+                        <h3>Özellikler</h3>
+                        <ul>
+                            <li><strong>Port Tarama:</strong> Nmap tabanlı gelişmiş port tarama</li>
+                            <li><strong>Vulnerability Assessment:</strong> OpenVAS entegrasyonu</li>
+                            <li><strong>Password Cracking:</strong> Hashcat ve John the Ripper</li>
+                            <li><strong>Network Analysis:</strong> Wireshark ve tcpdump</li>
+                            <li><strong>Web Security:</strong> OWASP ZAP entegrasyonu</li>
+                            <li><strong>Reporting:</strong> Detaylı güvenlik raporları</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>Teknoloji Stack</h2>
+                        <div class="tech-stack-detail">
+                            <div class="tech-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>Bash</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-search"></i>
+                                <span>Nmap</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-bug"></i>
+                                <span>OpenVAS</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-key"></i>
+                                <span>Hashcat</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-spider"></i>
+                                <span>OWASP ZAP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Kurulum</h2>
+                        <div class="installation">
+                            <h3>Docker ile Kurulum</h3>
+                            <pre><code># Repository'yi klonlayın
+git clone https://github.com/opensourcelab/securetools.git
+cd securetools
+
+# Docker image'ını build edin
+docker build -t securetools .
+
+# Container'ı çalıştırın
+docker run -it --rm securetools
+
+# Veya Docker Compose ile
+docker-compose up -d</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Kullanım Örnekleri</h2>
+                        <div class="usage-examples">
+                            <h3>Port Tarama</h3>
+                            <pre><code># Hedef sistemde port taraması
+python3 securetools.py scan --target 192.168.1.1 --ports 1-1000
+
+# Servis tespiti
+python3 securetools.py service-detect --target 192.168.1.1
+
+# Vulnerability scan
+python3 securetools.py vuln-scan --target 192.168.1.1</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Güvenlik Uyarısı</h2>
+                        <div class="security-warning">
+                            <p><strong>⚠️ Önemli:</strong> Bu araçlar sadece yetkili güvenlik testleri için kullanılmalıdır. İzinsiz kullanım yasal değildir ve sorumluluk kullanıcıya aittir.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Hızlı Bağlantılar</h3>
+                        <div class="quick-links">
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i>
+                                GitHub Repository
+                            </a>
+                            <a href="#" class="btn-demo">
+                                <i class="fas fa-external-link-alt"></i>
+                                Canlı Demo
+                            </a>
+                            <a href="#" class="btn-docs">
+                                <i class="fas fa-book"></i>
+                                Dokümantasyon
+                            </a>
+                            <a href="#" class="btn-license">
+                                <i class="fas fa-file-contract"></i>
+                                MIT Lisansı
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Proje İstatistikleri</h3>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">98</span>
+                                <span class="stat-label">GitHub Stars</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Forks</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">6</span>
+                                <span class="stat-label">Contributors</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">456</span>
+                                <span class="stat-label">Downloads</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>İçerik Araçları</h3>
+                        <div class="included-tools">
+                            <div class="tool-item">
+                                <i class="fas fa-search"></i>
+                                <span>Nmap</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-bug"></i>
+                                <span>OpenVAS</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-key"></i>
+                                <span>Hashcat</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-spider"></i>
+                                <span>OWASP ZAP</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Wireshark</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-terminal"></i>
+                                <span>Metasploit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../script.js"></script>
+    <script>
+        // Load footer
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html> 

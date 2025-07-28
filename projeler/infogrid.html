@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoGrid - OpenSourceLab</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-github-alt"></i>
+                <span>OpenSourceLab</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="../projeler.html" class="nav-link active">Projeler</a></li>
+                <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                <li><a href="../hizmetler.html" class="nav-link">Hizmetler</a></li>
+                <li><a href="../topluluk.html" class="nav-link">Topluluk</a></li>
+                <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <div class="project-icon-large">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="project-info">
+                    <h1>InfoGrid</h1>
+                    <p class="project-description">RSS, forum ve sosyal medya içeriklerini otomatik toplayan açık kaynak bilgi sistemi</p>
+                    <div class="project-meta">
+                        <div class="license-badge gpl">GPL v3</div>
+                        <div class="github-stats">
+                            <span><i class="fas fa-star"></i> 189</span>
+                            <span><i class="fas fa-code-branch"></i> 28</span>
+                            <span><i class="fas fa-eye"></i> 856</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="project-main">
+                    <div class="section">
+                        <h2>Proje Hakkında</h2>
+                        <p>InfoGrid, farklı kaynaklardan gelen bilgileri otomatik olarak toplayan, filtreleyen ve analiz eden gelişmiş bir bilgi yönetim sistemidir. RSS feed'leri, forum gönderileri ve sosyal medya içeriklerini tek bir platformda birleştirir.</p>
+                        
+                        <h3>Özellikler</h3>
+                        <ul>
+                            <li><strong>Çoklu Kaynak Desteği:</strong> RSS, forum, sosyal medya entegrasyonu</li>
+                            <li><strong>Akıllı Filtreleme:</strong> İçerik analizi ve otomatik kategorilendirme</li>
+                            <li><strong>Real-time Güncelleme:</strong> Anlık içerik takibi</li>
+                            <li><strong>Gelişmiş Arama:</strong> Full-text arama ve filtreleme</li>
+                            <li><strong>API Desteği:</strong> RESTful API ile entegrasyon</li>
+                            <li><strong>Mobil Uygulama:</strong> iOS ve Android desteği</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>Teknoloji Stack</h2>
+                        <div class="tech-stack-detail">
+                            <div class="tech-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Redis</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-server"></i>
+                                <span>Express.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS S3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Kurulum</h2>
+                        <div class="installation">
+                            <h3>Geliştirme Ortamı</h3>
+                            <pre><code># Repository'yi klonlayın
+git clone https://github.com/opensourcelab/infogrid.git
+cd infogrid
+
+# Bağımlılıkları yükleyin
+npm install
+
+# MongoDB'yi başlatın
+mongod
+
+# Uygulamayı başlatın
+npm run dev
+
+# Tarayıcıda http://localhost:3000 adresine gidin</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>API Dokümantasyonu</h2>
+                        <p>InfoGrid API'si ile entegrasyon yapmak için:</p>
+                        <div class="api-examples">
+                            <h3>İçerik Alma</h3>
+                            <pre><code>GET /api/v1/contents
+Authorization: Bearer YOUR_API_KEY
+
+Response:
+{
+  "contents": [
+    {
+      "id": "123",
+      "title": "Örnek Başlık",
+      "content": "İçerik metni...",
+      "source": "rss",
+      "published_at": "2024-01-15T10:30:00Z"
+    }
+  ]
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Hızlı Bağlantılar</h3>
+                        <div class="quick-links">
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i>
+                                GitHub Repository
+                            </a>
+                            <a href="#" class="btn-demo">
+                                <i class="fas fa-external-link-alt"></i>
+                                Canlı Demo
+                            </a>
+                            <a href="#" class="btn-docs">
+                                <i class="fas fa-book"></i>
+                                API Dokümantasyonu
+                            </a>
+                            <a href="#" class="btn-license">
+                                <i class="fas fa-file-contract"></i>
+                                GPL v3 Lisansı
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Proje İstatistikleri</h3>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">189</span>
+                                <span class="stat-label">GitHub Stars</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">28</span>
+                                <span class="stat-label">Forks</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Contributors</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">856</span>
+                                <span class="stat-label">Downloads</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Desteklenen Kaynaklar</h3>
+                        <div class="supported-sources">
+                            <div class="source-item">
+                                <i class="fas fa-rss"></i>
+                                <span>RSS Feeds</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fas fa-comments"></i>
+                                <span>Forum Gönderileri</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </div>
+                            <div class="source-item">
+                                <i class="fab fa-reddit"></i>
+                                <span>Reddit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../script.js"></script>
+    <script>
+        // Load footer
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html> 

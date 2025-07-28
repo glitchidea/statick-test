@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataLake - OpenSourceLab</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-github-alt"></i>
+                <span>OpenSourceLab</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="../projeler.html" class="nav-link active">Projeler</a></li>
+                <li><a href="../blog.html" class="nav-link">Blog</a></li>
+                <li><a href="../hizmetler.html" class="nav-link">Hizmetler</a></li>
+                <li><a href="../topluluk.html" class="nav-link">Topluluk</a></li>
+                <li><a href="../iletisim.html" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Detail Section -->
+    <section class="project-detail">
+        <div class="container">
+            <div class="project-header">
+                <div class="project-icon-large">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="project-info">
+                    <h1>DataLake</h1>
+                    <p class="project-description">Büyük veri işleme ve analizi için açık kaynak veri gölü çözümü</p>
+                    <div class="project-meta">
+                        <div class="license-badge gpl">GPL v3</div>
+                        <div class="github-stats">
+                            <span><i class="fas fa-star"></i> 76</span>
+                            <span><i class="fas fa-code-branch"></i> 12</span>
+                            <span><i class="fas fa-eye"></i> 234</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <div class="project-main">
+                    <div class="section">
+                        <h2>Proje Hakkında</h2>
+                        <p>DataLake, kurumların büyük veri ihtiyaçlarını karşılamak için geliştirilmiş kapsamlı bir veri gölü platformudur. Real-time streaming, batch processing ve gelişmiş analitik özellikleri ile modern veri mimarilerini destekler.</p>
+                        
+                        <h3>Özellikler</h3>
+                        <ul>
+                            <li><strong>Real-time Streaming:</strong> Apache Kafka ile gerçek zamanlı veri akışı</li>
+                            <li><strong>Batch Processing:</strong> Apache Spark ile büyük veri işleme</li>
+                            <li><strong>Data Storage:</strong> Hadoop HDFS ile dağıtık depolama</li>
+                            <li><strong>Data Processing:</strong> Scala ve Python desteği</li>
+                            <li><strong>Data Visualization:</strong> Grafana ve Kibana entegrasyonu</li>
+                            <li><strong>Data Governance:</strong> Veri kalitesi ve metadata yönetimi</li>
+                        </ul>
+                    </div>
+
+                    <div class="section">
+                        <h2>Teknoloji Stack</h2>
+                        <div class="tech-stack-detail">
+                            <div class="tech-item">
+                                <i class="fas fa-fire"></i>
+                                <span>Apache Spark</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-stream"></i>
+                                <span>Apache Kafka</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-database"></i>
+                                <span>Apache Hadoop</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-code"></i>
+                                <span>Scala</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-chart-bar"></i>
+                                <span>Grafana</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Kurulum</h2>
+                        <div class="installation">
+                            <h3>Docker Compose ile Kurulum</h3>
+                            <pre><code># Repository'yi klonlayın
+git clone https://github.com/opensourcelab/datalake.git
+cd datalake
+
+# Docker Compose ile başlatın
+docker-compose up -d
+
+# Servisleri kontrol edin
+docker-compose ps
+
+# Spark Master UI: http://localhost:8080
+# Kafka Manager: http://localhost:9000
+# Grafana: http://localhost:3000</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Kullanım Örnekleri</h2>
+                        <div class="usage-examples">
+                            <h3>Spark Job Örneği</h3>
+                            <pre><code>// Scala ile Spark job
+import org.apache.spark.sql.SparkSession
+
+val spark = SparkSession.builder()
+  .appName("DataLake Example")
+  .getOrCreate()
+
+val df = spark.read.parquet("s3://datalake/raw/")
+val result = df.groupBy("category")
+  .agg(sum("amount"))
+  .write.mode("overwrite")
+  .parquet("s3://datalake/processed/")</code></pre>
+                        </div>
+                    </div>
+
+                    <div class="section">
+                        <h2>Veri Pipeline Örneği</h2>
+                        <div class="pipeline-example">
+                            <h3>Real-time Data Pipeline</h3>
+                            <pre><code># Kafka'dan veri okuma
+spark.readStream
+  .format("kafka")
+  .option("kafka.bootstrap.servers", "localhost:9092")
+  .option("subscribe", "events")
+  .load()
+  .writeStream
+  .format("parquet")
+  .option("checkpointLocation", "/tmp/checkpoint")
+  .start("/data/events/")</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-sidebar">
+                    <div class="sidebar-section">
+                        <h3>Hızlı Bağlantılar</h3>
+                        <div class="quick-links">
+                            <a href="#" class="btn-github">
+                                <i class="fab fa-github"></i>
+                                GitHub Repository
+                            </a>
+                            <a href="#" class="btn-demo">
+                                <i class="fas fa-external-link-alt"></i>
+                                Canlı Demo
+                            </a>
+                            <a href="#" class="btn-docs">
+                                <i class="fas fa-book"></i>
+                                Dokümantasyon
+                            </a>
+                            <a href="#" class="btn-license">
+                                <i class="fas fa-file-contract"></i>
+                                GPL v3 Lisansı
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Proje İstatistikleri</h3>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">76</span>
+                                <span class="stat-label">GitHub Stars</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">12</span>
+                                <span class="stat-label">Forks</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">4</span>
+                                <span class="stat-label">Contributors</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">234</span>
+                                <span class="stat-label">Downloads</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <h3>Desteklenen Formatlar</h3>
+                        <div class="supported-formats">
+                            <div class="format-item">
+                                <i class="fas fa-file-csv"></i>
+                                <span>CSV</span>
+                            </div>
+                            <div class="format-item">
+                                <i class="fas fa-file-code"></i>
+                                <span>JSON</span>
+                            </div>
+                            <div class="format-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Parquet</span>
+                            </div>
+                            <div class="format-item">
+                                <i class="fas fa-file-archive"></i>
+                                <span>Avro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../script.js"></script>
+    <script>
+        // Load footer
+        fetch('../footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html> 

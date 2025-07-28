@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projelerim - OpenSourceLab</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fab fa-github-alt"></i>
+                <span>OpenSourceLab</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="projeler.html" class="nav-link active">Projeler</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
+                <li><a href="hizmetler.html" class="nav-link">Hizmetler</a></li>
+                <li><a href="topluluk.html" class="nav-link">Topluluk</a></li>
+                <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projelerim</h2>
+                <p>Topluluk odaklı, özgür ve erişilebilir yazılım çözümleri</p>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-meta">
+                            <div class="license-badge">MIT License</div>
+                            <div class="github-stats">
+                                <span><i class="fas fa-star"></i> 245</span>
+                                <span><i class="fas fa-code-branch"></i> 34</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>SentrıSys</h3>
+                    <p>Open-source ağ izleme ve güvenlik analizi platformu. Real-time monitoring, alert sistemi ve kapsamlı dashboard ile.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="projeler/sentrisys.html" class="btn-github">
+                            <i class="fas fa-info-circle"></i>
+                            Detaylar
+                        </a>
+                        <button class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </button>
+                        <button class="btn-license" onclick="showLicenseModal('MIT')">
+                            <i class="fas fa-file-contract"></i>
+                            Lisans
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="project-meta">
+                            <div class="license-badge gpl">GPL v3</div>
+                            <div class="github-stats">
+                                <span><i class="fas fa-star"></i> 189</span>
+                                <span><i class="fas fa-code-branch"></i> 28</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>InfoGrid</h3>
+                    <p>RSS, forum ve sosyal medya içeriklerini otomatik toplayan ve filtreleyen açık kaynak bilgi sistemi.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="projeler/infogrid.html" class="btn-github">
+                            <i class="fas fa-info-circle"></i>
+                            Detaylar
+                        </a>
+                        <button class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </button>
+                        <button class="btn-license" onclick="showLicenseModal('GPL')">
+                            <i class="fas fa-file-contract"></i>
+                            Lisans
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-meta">
+                            <div class="license-badge apache">Apache 2.0</div>
+                            <div class="github-stats">
+                                <span><i class="fas fa-star"></i> 156</span>
+                                <span><i class="fas fa-code-branch"></i> 22</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>AutoPipeline</h3>
+                    <p>Mikroservis mimarisi ile çalışan açık kaynak iş akışı otomasyon platformu.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Go</span>
+                        <span class="tech-tag">gRPC</span>
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">NATS</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="projeler/autopipeline.html" class="btn-github">
+                            <i class="fas fa-info-circle"></i>
+                            Detaylar
+                        </a>
+                        <button class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </button>
+                        <button class="btn-license" onclick="showLicenseModal('Apache')">
+                            <i class="fas fa-file-contract"></i>
+                            Lisans
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="project-meta">
+                            <div class="license-badge">MIT License</div>
+                            <div class="github-stats">
+                                <span><i class="fas fa-star"></i> 98</span>
+                                <span><i class="fas fa-code-branch"></i> 15</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>SecureTools</h3>
+                    <p>Siber güvenlik profesyonelleri için açık kaynak araç seti. Penetrasyon testleri ve güvenlik analizi.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Bash</span>
+                        <span class="tech-tag">Nmap</span>
+                        <span class="tech-tag">OpenVAS</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="projeler/securetools.html" class="btn-github">
+                            <i class="fas fa-info-circle"></i>
+                            Detaylar
+                        </a>
+                        <button class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </button>
+                        <button class="btn-license" onclick="showLicenseModal('MIT')">
+                            <i class="fas fa-file-contract"></i>
+                            Lisans
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="project-meta">
+                            <div class="license-badge gpl">GPL v3</div>
+                            <div class="github-stats">
+                                <span><i class="fas fa-star"></i> 76</span>
+                                <span class="status-badge">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>DataLake</h3>
+                    <p>Büyük veri işleme ve analizi için açık kaynak veri gölü çözümü. Real-time streaming ve batch processing.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Apache Spark</span>
+                        <span class="tech-tag">Kafka</span>
+                        <span class="tech-tag">Hadoop</span>
+                        <span class="tech-tag">Scala</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="projeler/datalake.html" class="btn-github">
+                            <i class="fas fa-info-circle"></i>
+                            Detaylar
+                        </a>
+                        <button class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </button>
+                        <button class="btn-license" onclick="showLicenseModal('GPL')">
+                            <i class="fas fa-file-contract"></i>
+                            Lisans
+                        </button>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="project-meta">
+                            <div class="license-badge apache">Apache 2.0</div>
+                            <div class="github-stats">
+                                <span><i class="fas fa-star"></i> 124</span>
+                                <span class="status-badge beta">Beta</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>CloudNative</h3>
+                    <p>Container orchestration ve cloud-native uygulama geliştirme için açık kaynak araç seti.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Kubernetes</span>
+                        <span class="tech-tag">Helm</span>
+                        <span class="tech-tag">Istio</span>
+                        <span class="tech-tag">Prometheus</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="projeler/cloudnative.html" class="btn-github">
+                            <i class="fas fa-info-circle"></i>
+                            Detaylar
+                        </a>
+                        <button class="btn-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Demo
+                        </button>
+                        <button class="btn-license" onclick="showLicenseModal('Apache')">
+                            <i class="fas fa-file-contract"></i>
+                            Lisans
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- License Modal -->
+    <div id="licenseModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="licenseTitle">Lisans</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="licenseContent" class="license-text">
+                    <!-- License content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="script.js"></script>
+    <script>
+        // Load footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+
+        // License Modal
+        function showLicenseModal(licenseType) {
+            const modal = document.getElementById('licenseModal');
+            const title = document.getElementById('licenseTitle');
+            const content = document.getElementById('licenseContent');
+            
+            // Set title and content based on license type
+            switch(licenseType) {
+                case 'MIT':
+                    title.textContent = 'MIT License';
+                    content.innerHTML = `
+                        <p>Copyright (c) 2024 OpenSourceLab</p>
+                        <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+                        <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+                        <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+                    `;
+                    break;
+                case 'GPL':
+                    title.textContent = 'GNU General Public License v3.0';
+                    content.innerHTML = `
+                        <p>Copyright (c) 2024 OpenSourceLab</p>
+                        <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+                        <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+                        <p>You should have received a copy of the GNU General Public License along with this program. If not, see <a href="https://www.gnu.org/licenses/" target="_blank">https://www.gnu.org/licenses/</a>.</p>
+                    `;
+                    break;
+                case 'Apache':
+                    title.textContent = 'Apache License 2.0';
+                    content.innerHTML = `
+                        <p>Copyright (c) 2024 OpenSourceLab</p>
+                        <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+                        <p><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">https://www.apache.org/licenses/LICENSE-2.0</a></p>
+                        <p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+                    `;
+                    break;
+            }
+            
+            modal.style.display = 'block';
+        }
+
+        // Close modal
+        document.querySelector('.close').onclick = function() {
+            document.getElementById('licenseModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('licenseModal');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html> 
